@@ -1,14 +1,11 @@
-<div class="wrapper">
-  <div class="header">
-    <nav>
-      <ul>
-        <li><%= link_to 'Inicio', root_path %></li>
-        <li><%= link_to 'Gimnasios', gyms_path, {:class=>"active"} %></li>
-        <li><%= link_to 'Poképaradas', pokestops_path %></li>
-      </ul>
-    </nav>
+
+<div class="Site">
+  <div class="navbar">
+    <%= link_to 'Inicio', root_path, {:class=>"active"} %>
+    <%= link_to 'Gimnasios', gyms_path %>
+    <%= link_to 'Poképaradas', pokestops_path %>
   </div>
-  <div class="content">
+  <div class="Site-content">
     <h1>Gimnasios</h1>
     <table class="center">
       <tr>
@@ -29,7 +26,5 @@
       <% end %>
     </table>
   </div>
-  <div class="footer">
-    Footer
-  </div>
-</div>
+  <div class="landingfooter">…</div>
+</div >
