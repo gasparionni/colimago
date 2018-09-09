@@ -27,7 +27,7 @@ body {
 
 #main {
   display: flex;
-  flex: auto;
+  flex: 1;
   justify-content: space-around;
 }
 
@@ -50,8 +50,6 @@ footer, article {
 }
 
 table {
-  -webkit-overflow-scrolling: touch;
-  overflow-x: auto;
   border-collapse: collapse;
   width: 100%;
 }
