@@ -1,36 +1,3 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-.wrappermain {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  grid-auto-rows: 100px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.headermain {
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.contentmain {
-  position: relative;
-  min-height: 100%;
-  grid-column-start: 2;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 7;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.footermain {
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 7; 
-  grid-row-end: 7;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
