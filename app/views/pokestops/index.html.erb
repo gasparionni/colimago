@@ -1,0 +1,35 @@
+<div class="wrapper">
+  <div class="header">
+    <nav>
+      <ul>
+        <li><%= link_to 'Inicio', root_path %></li>
+        <li><%= link_to 'Gimnasios', gyms_path %></li>
+        <li><%= link_to 'Poképaradas', pokestops_path, {:class=>"active"} %></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="content">
+    <h1>Poképaradas</h1>
+    <table class="center">
+      <tr>
+        <th>Nombre</th>
+        <th>Latitud</th>
+        <th>Longitud</th>
+        <th colspan="2">Acciones</th>
+      </tr>
+    
+      <% @pokestops.each do |pokestop| %>
+        <tr>
+          <td><%= pokestop.name %></td>
+          <td><%= pokestop.latitude %></td>
+          <td><%= pokestop.longitude %></td>
+          <td><%= link_to 'Show', pokestop_path(pokestop) %></td>
+          <td><%= link_to 'Edit', edit_pokestop_path(pokestop) %></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+  <div class="footer">
+    Footer
+  </div>
+</div>
