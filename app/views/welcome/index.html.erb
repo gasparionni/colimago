@@ -1,20 +1,11 @@
-<div class="wrappermain">
-  <div class="headermain">
-    <nav>
-      <ul>
-        <li><%= link_to 'Inicio', root_path, {:class=>"active"} %></li>
-        <li><%= link_to 'Gimnasios', gyms_path %></li>
-        <li><%= link_to 'Poképaradas', pokestops_path %></li>
-      </ul>
-    </nav>
+<div class="Site">
+  <div class="navbar">
+    <%= link_to 'Inicio', root_path, {:class=>"active"} %>
+    <%= link_to 'Gimnasios', gyms_path %>
+    <%= link_to 'Poképaradas', pokestops_path %>
   </div>
-  <div class="contentmain">
-    <h1>Colima GO</h1>
-    <h3>Pokémon GO</h3>
+  <div class="Site-content">
     <%= image_tag('pokeball_cropped.png', :style=>'width: 30%; position:absolute; right:0px; bottom:0px;') %>
-
   </div>
-  <div class="footermain" style="background-color: #000">
-    Footer
-  </div>
+  <div class="landingfooter">…</div>
 </div>
