@@ -143,5 +143,17 @@ li a.active {
 }
 
 .Site-content {
+  position: relative;
   flex: 1;
+}
+
+@media screen and (max-width: 575px) {
+  .Site {
+    display: block;
+  }
+  .poke {
+    width: 10%;
+    position: relative;
+    bottom: auto;
+  }
 }
